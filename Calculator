@@ -1,0 +1,16 @@
+num1 = input("Please enter the first number\n")
+num2 = input("Please enter the second number\n")
+n1 = (num1)
+n2 = (num2)
+Op = input("Please enter the operation(*, +, -, /)\n")
+if Op == '*':
+    tot = float(n1) * float(n2)
+elif Op == '+':
+  tot = float(n1) + float(n2)
+elif Op == '-' :
+   tot = float(n1) - float(n2)
+elif Op == '/' :
+    tot = float(n1) / float(n2)
+else:
+  print("Invalid Operation")
+print('The result of your calculation is {}'.format(tot))
