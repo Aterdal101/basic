@@ -1,0 +1,36 @@
+import random
+print("Hello!!!")
+loss = ("You Lose!!")
+win = ("You Win !!!!")
+rps = ("rock", "paper", "scissors")
+computer = random.choice(rps)
+player = input("rock paper or scissors:")
+print(player)
+print("Computer:", computer)
+print('Player:', player)
+
+if computer == player:
+    print("Draw!")
+elif computer == ("rock") and player == ("scissors"):
+    print(loss)
+elif computer == ("rock") and player == ("paper"):
+    print(win)
+elif computer == ("paper") and player == ("scissors"):
+    print(win)
+elif computer == ("paper") and player == ("rock"):
+    print(loss)
+elif computer == ("scissors") and player == ("paper"):
+    print(loss)
+elif computer == ("scissors") and player == ("rock"):
+    print(win)
+else:
+    print("invalid input")
+
+playagain = input("Play again? (yes/no): ").lower()
+
+if playagain == "yes":
+    print("OK!!")
+    breakpoint()
+else:
+    print("bye!!")
+    quit()
